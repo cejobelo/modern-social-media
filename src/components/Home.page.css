@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: "RobotoMono";
+    src: url("../../public/fonts/RobotoMono-Bold.woff") format("woff");
+}
+
+#tsparticles
+{
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.Home
+{
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    background-color: #000000;
+}
+
+.Home__post
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.Home__post:hover
+{
+    color: #eb3b5a !important;
+    transform: scale(1.07);
+}
+
+.Home .messaging-link
+{
+    display: none;
+}
+
+.Home__form
+{
+    position: relative;
+}
+
+.Home__title
+{
+    margin-bottom: 13px !important;
+    /*padding: 31px;*/
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 21px;
+    font-family: RobotoMono;
+}
+
+.Home__subtitle
+{
+    margin-bottom: 13px;
+    font-size: 0.85rem;
+}
+
+.Home__metadata
+{
+    margin-top: 13px;
+    font-size: 0.85rem;
+}
+
+.Home__input
+{
+    height: 55px !important;
+    font-size: 12px;
+    font-family: RobotoMono;
+    display: block;
+}
+
+.Home__content
+{
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.Home__row
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-title
+{
+    color: #000000;
+}
+
+.offcanvasPost
+{
+    color: #000000;
+}

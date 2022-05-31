@@ -1,0 +1,31 @@
+
+.Post
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.Post:hover
+{
+    color: #eb3b5a !important;
+    transform: scale(1.07);
+}
+
+.Post__text
+{
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.Post__username
+{
+    font-size: 34px;
+}
+
+.Post__date
+{
+    font-size: 21px;
+}
