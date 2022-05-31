@@ -6,13 +6,13 @@ const server = createServer(app);
 
 const cors = require('cors');
 app.use(cors({
-    origin: ['http://127.0.0.1:3000', 'https://realtalk21.herokuapp.com'],
+    origin: ['http://127.0.0.1:3000', process.env.REACT_APP_URL],
 }));
 
 const { Server } = require('socket.io');
 const io = new Server(server, {
     cors: {
-        origin: ['http://127.0.0.1:3000', 'https://realtalk21.herokuapp.com'],
+        origin: ['http://127.0.0.1:3000', process.env.REACT_APP_URL],
     },
 });
 const port = process.env.NODE_ENV === 'production' ? process.env.PORT : 2121;
